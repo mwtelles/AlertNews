@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#FFF"
     android:orientation="vertical"
     android:padding="15dp"
     tools:layout_editor_absoluteX="1dp"
@@ -18,15 +20,17 @@
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logo"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/createTime_text"
             android:layout_width="321dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="TextView"
+            tools:ignore="HardcodedText" />
 
     </LinearLayout>
 
@@ -38,16 +42,72 @@
         android:paddingTop="0dp"
         android:paddingBottom="10dp"
         android:text="TextView"
+        android:textAllCaps="true"
         android:textStyle="bold"
-        android:textAllCaps="true"/>
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/description_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
         android:ellipsize="end"
         android:maxLines="2"
+        android:text="TextView"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/author_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="TextView"
+        tools:ignore="HardcodedText"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/postContent_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:lineHeight="0dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/createDate_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:lineHeight="0dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/updateDate_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:lineHeight="0dp"
+        tools:ignore="HardcodedText"
+        />
+
+    <TextView
+        android:id="@+id/updateTime_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:lineHeight="0dp"
+        tools:ignore="HardcodedText"
+        />
+    <TextView
+        android:id="@+id/readTime_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:lineHeight="0dp"
+        tools:ignore="HardcodedText"
         />
 
 </LinearLayout>

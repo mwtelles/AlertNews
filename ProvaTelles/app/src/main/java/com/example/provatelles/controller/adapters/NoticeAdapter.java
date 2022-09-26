@@ -40,13 +40,26 @@ public class NoticeAdapter extends BaseAdapter {
         }
 
         Post news = (Post) getItem(position);
-        TextView textViewCreateTime = convertView.findViewById(R.id.createTime_text);
         TextView textViewTitle = convertView.findViewById(R.id.title_text);
         TextView textDescription = convertView.findViewById(R.id.description_text);
+        TextView textViewPostContent = convertView.findViewById(R.id.postContent_text);
+        TextView textViewAuthor = convertView.findViewById(R.id.author_text);
+        TextView textViewCreateTime = convertView.findViewById(R.id.createTime_text);
+        TextView textViewUpdateTime = convertView.findViewById(R.id.updateTime_text);
+        TextView textViewCreateDate = convertView.findViewById(R.id.createDate_text);
+        TextView textViewUpdateDate = convertView.findViewById(R.id.updateDate_text);
+        TextView textViewReadingTime = convertView.findViewById(R.id.readTime_text);
 
-        textViewCreateTime.setText(news.getCreate_time());
+
         textViewTitle.setText(news.getTitle());
         textDescription.setText(news.getDescription());
+        textViewPostContent.setText(news.getContent());
+        textViewAuthor.setText(news.getAuthor());
+        textViewCreateTime.setText(news.getCreate_time());
+        textViewUpdateTime.setText(news.getUpdate_time());
+        textViewCreateDate.setText(news.getCreate_date());
+        textViewUpdateDate.setText(news.getUpdate_date());
+        textViewReadingTime.setText(news.getReading_time());
 
         return convertView;
     }

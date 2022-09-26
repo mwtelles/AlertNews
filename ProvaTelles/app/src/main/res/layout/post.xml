@@ -19,7 +19,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="15dp">
 
@@ -33,7 +33,8 @@
             android:layout_height="wrap_content"
             android:text="TextView"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
 
         <Space
             android:layout_width="match_parent"
@@ -44,6 +45,7 @@
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:text="TextView"
+            tools:ignore="HardcodedText"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="66dp" />
 
@@ -56,38 +58,10 @@
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:text="AuthorName"
+            tools:ignore="HardcodedText"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="66dp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Atualizado em " />
-
-            <TextView
-                android:id="@+id/updateDate_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-
-            <TextView
-                android:id="@+id/updateTime_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -98,33 +72,87 @@
                 android:id="@+id/createDate_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="createDate"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/barra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="createDate" />
+                android:text=" | " />
 
             <TextView
                 android:id="@+id/createTime_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="CreateTime"
+                tools:ignore="HardcodedText" />
+
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/updating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Atualizado em " />
+
+            <TextView
+                android:id="@+id/updateDate_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/barra2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" | " />
+
+            <TextView
+                android:id="@+id/updateTime_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/readTime_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/postContent_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/readTime_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp" />
-
-    <TextView
-        android:id="@+id/postContent_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
 
 
 </LinearLayout>

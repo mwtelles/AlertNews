@@ -10,9 +10,9 @@ public class Post {
     private String update_time;
     private String create_date;
     private String update_date;
-    private int reading_time;
+    private String reading_time;
 
-    public Post(int id, String title, String description, String content, String author, String create_time, String update_time, String create_date, String update_date, int reading_time) {
+    public Post(int id, String title, String description, String content, String author, String create_time, String update_time, String create_date, String update_date, String reading_time) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -81,11 +81,11 @@ public class Post {
         this.author = author;
     }
 
-    public int getReading_time() {
+    public String getReading_time() {
         return reading_time;
     }
 
-    public void setReading_time(int reading_time) {
+    public void setReading_time(String reading_time) {
         this.reading_time = reading_time;
     }
 
