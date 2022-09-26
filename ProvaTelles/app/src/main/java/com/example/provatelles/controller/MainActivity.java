@@ -31,17 +31,14 @@ public class MainActivity extends AppCompatActivity {
 
                 String title = (String) ((TextView) view.findViewById(R.id.title_text)).getText();
                 String description = (String) ((TextView) view.findViewById(R.id.description_text)).getText();
-                String author = (String) ((TextView) view.findViewById(R.id.author_text)).getText();
 
                 Intent intent = new Intent(MainActivity.this, NoticeActivity.class);
 
                 Bundle object = new Bundle();
                 object.putString("title", title);
                 object.putString("description", description);
-                object.putString("author", author);
                 intent.putExtras(object);
                 startActivity(intent);
-                finish();
 
             }
         });
